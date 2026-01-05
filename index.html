@@ -9,10 +9,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-  <body class="bg-gray-100">
+<body class="bg-gray-100">
 
   <!-- NAVBAR -->
-  <nav class="bg-white shadow-md">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-xl font-bold">My Portfolio</h1>
 
@@ -23,96 +23,137 @@
       </ul>
     </div>
   </nav>
-<!-- HERO -->
 
-  <section class="py-20 bg-gray-100">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+  <!-- HERO -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-    <div>
-      <h1 class="text-4xl font-bold mb-4">
-        Hi, I'm <span class="text-blue-600">Rifandi</span>
-      </h1>
+      <div>
+        <h1 class="text-4xl font-bold mb-4">
+          Hi, I'm <span class="text-blue-600">Rifandi</span>
+        </h1>
+
+        <p class="text-gray-600 mb-6">
+          Junior Web Developer — belajar Laravel, CodeIgniter, dan membuat website portofolio sederhana.
+        </p>
+
+        <a href="#projects"
+           class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+          Lihat Project
+        </a>
+      </div>
+
+      <div class="text-center">
+        <img src="https://via.placeholder.com/350"
+             alt="Profile"
+             class="rounded-2xl mx-auto shadow">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h2 class="text-3xl font-bold mb-10">My Projects</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- CARD 1 -->
+        <div class="bg-white rounded-xl shadow p-5 border">
+          <img src="https://via.placeholder.com/400x220"
+               alt="Project 1"
+               class="rounded mb-4">
+
+          <h3 class="font-semibold text-lg mb-2">Website Portfolio</h3>
+          <p class="text-gray-600 mb-4">
+            Website sederhana untuk menampilkan data diri dan project.
+          </p>
+
+          <a href="#" class="text-blue-600 font-semibold hover:underline">
+            Lihat Project →
+          </a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="bg-white rounded-xl shadow p-5 border">
+          <img src="https://via.placeholder.com/400x220"
+               alt="Project 2"
+               class="rounded mb-4">
+
+          <h3 class="font-semibold text-lg mb-2">Landing Page</h3>
+          <p class="text-gray-600 mb-4">
+            Halaman promosi menggunakan HTML + Bootstrap.
+          </p>
+
+          <a href="#" class="text-blue-600 font-semibold hover:underline">
+            Lihat Project →
+          </a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="bg-white rounded-xl shadow p-5 border">
+          <img src="https://via.placeholder.com/400x220"
+               alt="Project 3"
+               class="rounded mb-4">
+
+          <h3 class="font-semibold text-lg mb-2">Project Kampus</h3>
+          <p class="text-gray-600 mb-4">
+            Latihan CRUD sederhana untuk belajar backend dasar.
+          </p>
+
+          <a href="#" class="text-blue-600 font-semibold hover:underline">
+            Lihat Project →
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h2 class="text-3xl font-bold mb-6">Contact</h2>
 
       <p class="text-gray-600 mb-6">
-        Junior Web Developer — belajar Laravel, CodeIgniter, dan membuat website portofolio sederhana.
+        Ingin kerja sama atau tanya-tanya? Silakan kirim pesan:
       </p>
 
-      <a href="#projects"
-         class="bg-blue-600 text-white px-5 py-2 rounded-lg">
-        Lihat Project
-      </a>
-    </div>
+      <form class="grid md:grid-cols-2 gap-6">
 
-    <div class="text-center">
-      <img src="https://via.placeholder.com/350"
-           class="rounded-2xl mx-auto shadow">
-    </div>
+        <input
+          type="text"
+          placeholder="Nama"
+          class="p-3 rounded border">
 
-  </div>
-</section>
+        <input
+          type="email"
+          placeholder="Email"
+          class="p-3 rounded border">
 
-<section id="projects" class="py-20">
-  <div class="max-w-6xl mx-auto px-6">
+        <textarea
+          placeholder="Pesan"
+          class="p-3 rounded border md:col-span-2"
+          rows="4"></textarea>
 
-    <h2 class="text-3xl font-bold mb-10">My Projects</h2>
+        <button
+          class="bg-blue-600 text-white px-6 py-3 rounded-lg md:col-span-2 hover:bg-blue-700">
+          Kirim
+        </button>
 
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <!-- CARD 1 -->
-      <div class="bg-white rounded-xl shadow p-5">
-        <img src="https://via.placeholder.com/400x220"
-             class="rounded mb-4">
-
-        <h3 class="font-semibold text-lg mb-2">Website Portfolio</h3>
-        <p class="text-gray-600 mb-4">
-          Website sederhana untuk menampilkan data diri dan project.
-        </p>
-
-        <a href="#" class="text-blue-600 font-semibold">
-          Lihat Project →
-        </a>
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="bg-white rounded-xl shadow p-5">
-        <img src="https://via.placeholder.com/400x220"
-             class="rounded mb-4">
-
-        <h3 class="font-semibold text-lg mb-2">Landing Page</h3>
-        <p class="text-gray-600 mb-4">
-          Halaman promosi menggunakan HTML + Bootstrap.
-        </p>
-
-        <a href="#" class="text-blue-600 font-semibold">
-          Lihat Project →
-        </a>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="bg-white rounded-xl shadow p-5">
-        <img src="https://via.placeholder.com/400x220"
-             class="rounded mb-4">
-
-        <h3 class="font-semibold text-lg mb-2">Project Kampus</h3>
-        <p class="text-gray-600 mb-4">
-          Latihan CRUD sederhana untuk belajar backend dasar.
-        </p>
-
-        <a href="#" class="text-blue-600 font-semibold">
-          Lihat Project →
-        </a>
-      </div>
+      </form>
 
     </div>
+  </section>
 
-  </div>
-</section>
-
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-center text-gray-300 py-6">
+    <p>© 2026 — Rifandi. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
-
-
-
-
-
